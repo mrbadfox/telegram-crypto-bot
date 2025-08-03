@@ -1,7 +1,6 @@
-python-telegram-bot==20.7
+python-telegram-bot==20.3
 httpx
 pandas
 matplotlib
 ta
 google-generativeai
-apscheduler
