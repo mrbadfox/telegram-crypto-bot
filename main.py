@@ -25,7 +25,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # تنظیم Gemini
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 # متغیر تنظیم قیمت فروش
 sell_price = None
@@ -135,3 +135,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
