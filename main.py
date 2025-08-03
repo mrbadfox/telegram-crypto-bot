@@ -24,11 +24,8 @@ from telegram.constants import ParseMode
 import google.generativeai as genai
 
 # --- Configurations ---
-BOT_TOKEN = "8325739398:AAGH9BNR8_kElZe_Dv5fLyOzLa9a9LAwYFQ"
-USER_CHAT_ID = 7693531146
 COIN_ID = "notcoin"
 VS_CURRENCY = "usd"
-GEMINI_API_KEY = "AIzaSyAJmhm6zZf4TP177opJF--zjQ8IwTTzuCE"
 genai.configure(api_key=GEMINI_API_KEY)
 GEMINI_MODEL_NAME = "gemini-2.0-flash"
 
@@ -278,3 +275,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
