@@ -20,12 +20,12 @@ from ta.momentum import RSIIndicator
 import google.generativeai as genai
 
 # خواندن توکن‌ها از محیط
-BOT_TOKEN = os.getenv("8325739398:AAGH9BNR8_kElZe_Dv5fLyOzLa9a9LAwYFQ")
-GEMINI_API_KEY = os.getenv("AIzaSyAJmhm6zZf4TP177opJF--zjQ8IwTTzuCE")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # تنظیم Gemini
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-pro')
 
 # متغیر تنظیم قیمت فروش
 sell_price = None
